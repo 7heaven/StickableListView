@@ -5,7 +5,7 @@ import android.app.Activity;
 
 public class MainActivity extends Activity {
 
-	private StickListView stickListView;
+	private StickListViewV2 stickListView;
 	private StickListAdapter adapter;
 	
 	@Override
@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		stickListView = (StickListView) findViewById(R.id.listview);
+		stickListView = (StickListViewV2) findViewById(R.id.listview);
 		adapter = new StickListAdapter(this);
 		stickListView.setAdapter(adapter);
 	}
